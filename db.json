@@ -1,3 +1,19 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "tags": [],
+      "content": "Master mongo db",
+      "id": 1697459426481
+    },
+    {
+      "tags": [],
+      "content": "Master GraphQL",
+      "id": 1697459439030
+    },
+    {
+      "tags": [],
+      "content": "Deeply Understand Node.js",
+      "id": 1697459450810
+    }
+  ]
 }

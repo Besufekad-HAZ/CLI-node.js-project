@@ -1,7 +1,7 @@
 import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import {newNote, getAllNotes, findNotes, removeNote, removeAllNotes} from './notes.js'
-
+import {start}
 const listNotes = (notes) => {
   notes.forEach(note => {
     console.log('\n')
@@ -61,8 +61,10 @@ yargs(hideBin(process.argv))
         type: 'number'
       })
   }, async (argv) => {
-
+    const notes = await getAllNotes()
+    start(notes, argv.port)
   })
+
   .command('clean', 'remove all notes', () => {}, async (argv) => {
     await removeAllNotes()
     console.log('All notes removed')
